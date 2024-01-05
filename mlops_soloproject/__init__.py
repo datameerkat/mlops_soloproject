@@ -1,0 +1,2 @@
+from mlops_soloproject.models.model import MyNeuralNet
+from mlops_soloproject.predict_model import predict
