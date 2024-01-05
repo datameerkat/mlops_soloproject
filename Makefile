@@ -38,7 +38,13 @@ clean:
 
 ## Process raw data into processed data
 data:
-	python $(PROJECT_NAME)/data/make_dataset.py
+#	python $(PROJECT_NAME)/data/make_dataset.py
+#	python $ home/datameerkat/anaconda3/envs/mlops/bin/python /home/datameerkat/MLOPs/Course_material/mlops_soloproject/data/make_dataset.py
+	python ./data/make_dataset.py
+
+## Train the current model
+train:
+	python ./models/train_model.py
 
 #################################################################################
 # Documentation RULES                                                           #
