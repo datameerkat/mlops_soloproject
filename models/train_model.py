@@ -68,7 +68,9 @@ def evaluate(model_checkpoint, batch_size):
     print(f"Accuracy: {(test_preds == test_labels).float().mean()} %")
 
 def create_dataloader(batch_size):
-    processed_dir = '/home/datameerkat/MLOPs/Course_material/mlops_soloproject/data/processed'
+    #processed_dir = '/home/datameerkat/MLOPs/Course_material/mlops_soloproject/data/processed'
+    script_dir = os.path.dirname(__file__)
+    processed_dir = os.path.join(script_dir, '..', 'data/processed')
     train_tensor_file = 'train_tensor.pt'
     train_labels_file = 'train_labels.pt'
     test_tensor_file = 'test_tensor.pt'
