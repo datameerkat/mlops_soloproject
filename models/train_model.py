@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from torch.utils.data import TensorDataset, DataLoader
-from model import MyAwesomeModel
+from models.model import MyAwesomeModel
 import os
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -68,7 +68,6 @@ def evaluate(model_checkpoint, batch_size):
     print(f"Accuracy: {(test_preds == test_labels).float().mean()} %")
 
 def create_dataloader(batch_size):
-    #processed_dir = '/home/datameerkat/MLOPs/Course_material/mlops_soloproject/data/processed'
     script_dir = os.path.dirname(__file__)
     processed_dir = os.path.join(script_dir, '..', 'data/processed')
     train_tensor_file = 'train_tensor.pt'

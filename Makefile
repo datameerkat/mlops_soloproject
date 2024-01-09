@@ -48,7 +48,7 @@ data:
 
 ## Train the current model
 train:
-	python ./models/train_model.py
+	python -m models.train_model
 
 #################################################################################
 # Documentation RULES                                                           #
