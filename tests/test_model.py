@@ -1,6 +1,5 @@
 from tests import _PROJECT_ROOT
 import torch
-import os
 from models import model
 
 model = model.MyAwesomeModel()

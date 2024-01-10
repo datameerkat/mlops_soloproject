@@ -1,4 +1,3 @@
-import pytest
 from tests import _PATH_DATA
 import torch
 import os
